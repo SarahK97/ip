@@ -1,0 +1,107 @@
+:root {
+    --blue: #83D4F9;
+    --yellow: #F9EC61;
+    --grey: #f1f1f1;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+
+.row{
+    margin-bottom: 20px;
+}
+
+/*page title*/
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 20px;
+}
+
+/*used only for Email is invalid Error*/
+h3{
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--blue);
+    margin-top: -20px;
+}
+
+h4{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: -10px;
+}
+
+p {
+    font-size: 16px;
+}
+
+a {
+    color: var(--blue);
+}
+
+/*Textfield*/
+.input-box-request {
+    resize: none;
+    width: 585px;
+    height: 200px;
+    background-color: var(--grey);
+    box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border: #666666;
+    padding: 10px;
+}
+
+.input-box {
+    width: 585px;
+    height: 60px;
+    background-color: var(--grey);
+    box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border: #666666;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.input-text{
+    border: none;
+    border-bottom: 2px solid black;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.input-text:focus{
+    outline: none;
+    border-bottom: 2px solid black;
+}
+
+/*Buttons*/
+.closepagebutton{
+    background-color: transparent;
+    border: none;
+    height: 60px;
+    font-size: 30px;
+}
+
+.editProfile{
+    height: 25px;
+    margin-top: 27px;
+    margin-left: 20px;
+}
+
+.profilePicture{
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 10vw;
+}
+
+/* Style for small screens */
+@media (max-width: 440px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .profilePicture{
+        height: 20vw;
+    }
+
+}

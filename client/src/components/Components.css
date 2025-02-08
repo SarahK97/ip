@@ -1,0 +1,239 @@
+/*Navbar*/
+.navbar {
+    position: relative;
+    background-color: var(--blue);
+    display: flex;
+    flex: 0 0 auto;
+    width: 100%;
+    height: 5em;
+}
+
+.navbar-toggler {
+    position: absolute;
+    left: 0px;
+}
+
+.loginPicture{
+    height: 30px;
+    margin-right: 10px;
+}
+
+.dropdown {
+    position: absolute;
+    right: 0;
+    left: auto;
+}
+
+/*remove arrow next to Login picture*/
+.dropdown-toggle::after {
+    display: none;
+}
+
+.dropdown-menu {
+    background-color: var(--blue);
+    border-radius: 0;
+    border-color: var(--blue);
+    margin-right: -20px;
+}
+
+
+.navbar-nav .dropdown-menu-right {
+    right: 0;
+    left: auto;
+}
+
+.dropdown-menu-right:before {
+    right: auto;
+    left: 0;
+}
+
+.dropdown-item{
+    padding-top: 15px;
+}
+
+.dropdown-item:hover{
+    background-color: var(--blue);
+    font-weight: bold;
+}
+
+.brand-text{
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 0.04em;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+}
+
+.burger {
+    border: none;
+    background-color: transparent;
+    margin-left: 10px;
+    font-size: 25px;
+}
+
+.burger:hover {
+    background-color: transparent;
+}
+
+.sidebar{
+    background-color: var(--blue);
+    margin-top: 5em;
+    --bs-offcanvas-width: 300px;
+}
+
+.closeButton{
+    size: 5px;
+}
+
+.menu-text{
+    font-size: 1.2em;
+}
+
+.menu-text:hover{
+    font-weight: bold;
+}
+
+.nav-line {
+    background: #000000;
+    color: black;
+    height: 4px;
+    border: none;
+}
+
+/* Style for small screens */
+@media (max-width: 440px) {
+    .navbar {
+        height: 18vw;
+    }
+
+    .sidebar{
+        background-color: var(--blue);
+        margin-top: 18vw;
+    }
+
+    .brand-text{
+        font-size: 7vw;
+        font-weight: bold;
+        letter-spacing: 0.04em;
+        margin-left: 1vw;
+        min-margin-right: 10px;
+    }
+
+    .burger{
+        margin-left: 2vw;
+    }
+}
+
+/*Button*/
+.button {
+    display: inline-block;
+    height: 40px;
+    background-color: var(--yellow);
+    text-align: center;
+    border: 2px solid black;
+    text-transform: uppercase;
+    padding: 0 30px;
+}
+
+.button:hover {
+    font-weight: bold;
+    box-shadow: -5px 5px 0px 0px black;
+}
+
+.routebutton{
+    width: 40em;
+    height: 100px;
+    background-color: var(--grey);
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.routebutton:hover{
+    background-color: var(--yellow);
+}
+
+/* Chat */
+.talk-bubble-request {
+    display: inline-block;
+    position: relative;
+    width: 60em;
+    height: auto;
+    background-color: var(--yellow);
+}
+
+.talk-bubble-answer {
+    display: inline-block;
+    position: relative;
+    width: auto;
+    height: auto;
+    background-color: var(--grey);
+}
+
+/* Right triangle placed top left flush. */
+.tri-right.border.left-top:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -40px;
+    right: auto;
+    top: -8px;
+    bottom: auto;
+    border: 32px solid;
+    border-color: #666 transparent transparent transparent;
+}
+
+.tri-right.left-top:after{
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -20px;
+    right: auto;
+    top: 0px;
+    bottom: auto;
+    border: 22px solid;
+    border-color: var(--yellow) transparent transparent transparent;
+}
+
+.tri-right.border.right-top:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: auto;
+    right: -40px;
+    top: -8px;
+    bottom: auto;
+    border: 32px solid;
+    border-color: #666 transparent transparent transparent;
+}
+.tri-right.right-top:after{
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: auto;
+    right: -20px;
+    top: 0px;
+    bottom: auto;
+    border: 20px solid;
+    border-color: var(--grey) transparent transparent transparent;
+}
+
+.talktext{
+    padding: 1em;
+    text-align: left;
+    line-height: 1.5em;
+}
+.custom-file-upload-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e6e6e6;
+    color: #333;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    margin-right: 10px;
+}

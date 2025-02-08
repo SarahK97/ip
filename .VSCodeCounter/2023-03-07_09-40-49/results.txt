@@ -1,0 +1,47 @@
+Date : 2023-03-07 09:40:49
+Directory : /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/server
+Total : 15 files,  7508 codes, 46 comments, 89 blanks, all 7643 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| JSON       |          2 |      7,146 |          0 |          2 |      7,148 |
+| JavaScript |         11 |        355 |         44 |         86 |        485 |
+| Docker     |          1 |          6 |          2 |          1 |          9 |
+| YAML       |          1 |          1 |          0 |          0 |          1 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++-------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                  | files      | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                     |         15 |      7,508 |         46 |         89 |      7,643 |
+| . (Files)                                                                                             |          4 |      7,181 |         12 |         17 |      7,210 |
+| config                                                                                                |          2 |         11 |          0 |          2 |         13 |
+| controllers                                                                                           |          3 |        152 |         21 |         19 |        192 |
+| models                                                                                                |          3 |        140 |          5 |         31 |        176 |
+| routes                                                                                                |          3 |         24 |          8 |         20 |         52 |
++-------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                              | language   | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/server/Dockerfile                        | Docker     |          6 |          2 |          1 |          9 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/server/config/db.js                      | JavaScript |         10 |          0 |          2 |         12 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/server/config/settings.yml               | YAML       |          1 |          0 |          0 |          1 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/server/controllers/answer.controller.js  | JavaScript |         35 |          5 |          5 |         45 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/server/controllers/request.controller.js | JavaScript |         95 |         12 |         11 |        118 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/server/controllers/user.controller.js    | JavaScript |         22 |          4 |          3 |         29 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/server/index.js                          | JavaScript |         29 |         10 |         14 |         53 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/server/models/answer.model.js            | JavaScript |         33 |          1 |          8 |         42 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/server/models/request.model.js           | JavaScript |         88 |          4 |         18 |        110 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/server/models/user.model.js              | JavaScript |         19 |          0 |          5 |         24 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/server/package-lock.json                 | JSON       |      7,116 |          0 |          1 |      7,117 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/server/package.json                      | JSON       |         30 |          0 |          1 |         31 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/server/routes/answer.routes.js           | JavaScript |          7 |          2 |          6 |         15 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/server/routes/request.routes.js          | JavaScript |         11 |          6 |          9 |         26 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/server/routes/user.routes.js             | JavaScript |          6 |          0 |          5 |         11 |
+| Total                                                                                                 |            |      7,508 |         46 |         89 |      7,643 |
++-------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+

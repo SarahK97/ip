@@ -1,0 +1,133 @@
+image: node:alpine
+stages:
+  - version-check
+  - build
+  - test
+  - deploy
+
+cache:
+  paths:
+   - client/node_modules/
+   - server/node_modules/
+
+version-check-client:
+  cache: []
+  stage: version-check
+  script:
+  - cd client
+  - VERSION=$(npm pkg get version | sed 's/"//g')
+  - |
+    if [ "$(git ls-remote --exit-code --tags origin client-"$VERSION")" ]; then
+      echo "Tag client-'$VERSION' already exists > aborting";
+      exit 78
+    fi
+    echo "done"
+  only: 
+    - main
+  except:
+    - tags
+    - schedules
+
+version-check-server:
+  cache: []
+  stage: version-check
+  script:
+  - cd server
+  - VERSION=$(npm pkg get version | sed 's/"//g')
+  - |
+    if [ "$(git ls-remote --exit-code --tags origin server-"$VERSION")" ]; then
+      echo "Tag server-'$VERSION' already exists > aborting";
+      exit 78
+    fi
+    echo "done"
+  only:
+    - main
+  except:
+    - tags
+    - schedules
+
+build-client:
+  stage: build
+  script:
+  - cd client
+  - npm install
+
+build-server:
+  stage: build
+  script:
+  - cd server
+  - npm install
+
+build-docker-job-client:
+  stage: build
+  image: docker:latest
+  variables:
+    DOCKER_IMAGE_TAG: "$CI_REGISTRY_IMAGE/client:latest"
+  services:
+    - docker:dind
+  before_script:
+    - cd client
+  script:
+    - docker info
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+    - docker build --pull -t $DOCKER_IMAGE_TAG .
+    - docker push $DOCKER_IMAGE_TAG
+  only:
+    - main
+
+build-docker-job-server:
+  stage: build
+  image: docker:latest
+  variables:
+    DOCKER_IMAGE_TAG: "$CI_REGISTRY_IMAGE/server:latest"
+  services:
+    - docker:dind
+  before_script:
+    - cd server
+  script:
+    - docker info
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+    - docker build --pull -t $DOCKER_IMAGE_TAG .
+    - docker push $DOCKER_IMAGE_TAG
+  only:
+    - main
+
+test-client:
+  stage: test
+  coverage: /All files[^|]*\|[^|]*\s+([\d\.]+)/
+  script:
+  - cd client
+  - npm install
+  - npm test
+
+test-server:
+  stage: test
+  coverage: /All files[^|]*\|[^|]*\s+([\d\.]+)/
+  script:
+  - cd server
+  - npm test
+
+deploy-docker-job:
+  stage: deploy
+  image: docker/compose:latest
+  services:
+    - docker:dind
+  tags:
+    - csrunner2
+  variables:
+    DOCKER_TLS_CERTDIR: ''
+    DOCKER_HOST_SSH: "ssh://$DEPLOYMENT_USER@$DEPLOYMENT_HOST"
+  before_script:
+    - echo $CI_REGISTRY_PASSWORD | docker login -u $CI_REGISTRY_USER --password-stdin $CI_REGISTRY
+    - apk add openssh-client
+    - eval $(ssh-agent -s)
+    - echo "$DEPLOYMENT_KEY" | tr -d '\r' | ssh-add -
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+  script:
+    - ssh ubuntu@$DEPLOYMENT_HOST -i $DEPLOYMENT_KEY
+    - echo "DOCKER_HOST ${DOCKER_HOST_SSH}"
+    - docker-compose -f docker-compose.yml pull
+    - docker-compose -f docker-compose.yml up -d
+  only:
+    - main

@@ -1,0 +1,35 @@
+.user-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 40px;
+}
+
+.user-item {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 30px;
+}
+
+.user-item:hover {
+    cursor: pointer;
+}
+
+.user-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    background-image: "../Assets/userIcon.png";
+}
+
+.user-info {
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.user-name {
+    margin: 0;
+}

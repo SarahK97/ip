@@ -1,0 +1,108 @@
+Date : 2023-03-07 09:40:49
+Directory : /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/server
+Total : 59 files,  -35417 codes, -78 comments, -228 blanks, all -35723 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| YAML       |          1 |          1 |          0 |          0 |          1 |
+| Docker     |          2 |          0 |         -1 |          1 |          0 |
+| HTML       |          1 |        -20 |        -23 |         -1 |        -44 |
+| XML        |          3 |        -36 |          0 |         -3 |        -39 |
+| Markdown   |          1 |        -41 |          0 |        -36 |        -77 |
+| JavaScript |         37 |       -404 |          1 |        -60 |       -463 |
+| CSS        |          9 |       -666 |        -55 |       -128 |       -849 |
+| JSON       |          5 |    -34,251 |          0 |         -1 |    -34,252 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                             | files      | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                                |         59 |    -35,417 |        -78 |       -228 |    -35,723 |
+| . (Files)                                                                                                        |          4 |      7,181 |         12 |         17 |      7,210 |
+| ..                                                                                                               |         44 |    -42,925 |       -124 |       -317 |    -43,366 |
+| ../client                                                                                                        |         44 |    -42,925 |       -124 |       -317 |    -43,366 |
+| ../client (Files)                                                                                                |          4 |    -41,419 |         -3 |        -38 |    -41,460 |
+| ../client/public                                                                                                 |          2 |        -45 |        -23 |         -2 |        -70 |
+| ../client/src                                                                                                    |         38 |     -1,461 |        -98 |       -277 |     -1,836 |
+| ../client/src (Files)                                                                                            |          4 |       -431 |        -35 |        -85 |       -551 |
+| ../client/src/Assets                                                                                             |          3 |        -36 |          0 |         -3 |        -39 |
+| ../client/src/Styles                                                                                             |          8 |       -285 |        -20 |        -57 |       -362 |
+| ../client/src/__tests__                                                                                          |          9 |       -222 |        -15 |        -46 |       -283 |
+| ../client/src/__tests__/components                                                                               |          5 |       -123 |         -1 |        -20 |       -144 |
+| ../client/src/__tests__/pages                                                                                    |          4 |        -99 |        -14 |        -26 |       -139 |
+| ../client/src/components                                                                                         |          7 |       -190 |        -14 |        -29 |       -233 |
+| ../client/src/pages                                                                                              |          7 |       -297 |        -14 |        -57 |       -368 |
+| config                                                                                                           |          2 |         11 |          0 |          2 |         13 |
+| controllers                                                                                                      |          3 |        152 |         21 |         19 |        192 |
+| models                                                                                                           |          3 |        140 |          5 |         31 |        176 |
+| routes                                                                                                           |          3 |         24 |          8 |         20 |         52 |
++------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                                         | language   | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/client/Dockerfile                                   | Docker     |         -6 |         -3 |          0 |         -9 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/client/README.md                                    | Markdown   |        -41 |          0 |        -36 |        -77 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/client/package-lock.json                            | JSON       |    -41,303 |          0 |         -1 |    -41,304 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/client/package.json                                 | JSON       |        -69 |          0 |         -1 |        -70 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/client/public/index.html                            | HTML       |        -20 |        -23 |         -1 |        -44 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/client/public/manifest.json                         | JSON       |        -25 |          0 |         -1 |        -26 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/client/src/App.css                                  | CSS        |       -381 |        -35 |        -71 |       -487 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/client/src/App.js                                   | JavaScript |        -32 |          0 |         -7 |        -39 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/client/src/App.test.js                              | JavaScript |         -9 |          0 |         -3 |        -12 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/client/src/Assets/step1.svg                         | XML        |        -14 |          0 |         -1 |        -15 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/client/src/Assets/step2.svg                         | XML        |        -16 |          0 |         -1 |        -17 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/client/src/Assets/student.svg                       | XML        |         -6 |          0 |         -1 |         -7 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/client/src/Styles/Aboutpage.css                     | CSS        |         -9 |          0 |         -3 |        -12 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/client/src/Styles/App.css                           | CSS        |        -37 |          0 |         -7 |        -44 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/client/src/Styles/Card.css                          | CSS        |        -28 |          0 |         -4 |        -32 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/client/src/Styles/CurrentPageBanner.css             | CSS        |        -31 |         -3 |         -8 |        -42 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/client/src/Styles/Homepage.css                      | CSS        |        -12 |          0 |         -2 |        -14 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/client/src/Styles/Navbar.css                        | CSS        |        -69 |        -15 |        -15 |        -99 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/client/src/Styles/Requestpage.css                   | CSS        |        -43 |          0 |         -6 |        -49 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/client/src/Styles/Uploadpage.css                    | CSS        |        -56 |         -2 |        -12 |        -70 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/client/src/__tests__/components/DdInput.test.js     | JavaScript |        -48 |          0 |         -3 |        -51 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/client/src/__tests__/components/draganddrop.test.js | JavaScript |        -16 |         -1 |         -2 |        -19 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/client/src/__tests__/components/navbar.test.js      | JavaScript |        -27 |          0 |         -7 |        -34 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/client/src/__tests__/components/routebutton.test.js | JavaScript |        -16 |          0 |         -4 |        -20 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/client/src/__tests__/components/tile.test.js        | JavaScript |        -16 |          0 |         -4 |        -20 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/client/src/__tests__/pages/ChatYPExpert.test.js     | JavaScript |        -12 |         -1 |         -2 |        -15 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/client/src/__tests__/pages/Homepage.test.js         | JavaScript |        -43 |         -1 |         -8 |        -52 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/client/src/__tests__/pages/Request.test.js          | JavaScript |        -16 |         -8 |         -9 |        -33 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/client/src/__tests__/pages/UploadYP.test.js         | JavaScript |        -28 |         -4 |         -7 |        -39 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/client/src/components/DdInput.js                    | JavaScript |        -68 |          0 |         -4 |        -72 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/client/src/components/DragAndDrop.js                | JavaScript |        -16 |          0 |         -4 |        -20 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/client/src/components/MainTile.js                   | JavaScript |        -14 |          0 |         -3 |        -17 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/client/src/components/Navbar.js                     | JavaScript |        -14 |          0 |         -3 |        -17 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/client/src/components/RequestInChat.js              | JavaScript |        -12 |          0 |         -3 |        -15 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/client/src/components/RequestList.js                | JavaScript |        -55 |        -14 |        -10 |        -79 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/client/src/components/RouteButton.js                | JavaScript |        -11 |          0 |         -2 |        -13 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/client/src/index.js                                 | JavaScript |         -9 |          0 |         -4 |        -13 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/client/src/pages/About.js                           | JavaScript |        -36 |         -8 |         -9 |        -53 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/client/src/pages/ChatYPExpert.js                    | JavaScript |        -46 |         -2 |         -9 |        -57 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/client/src/pages/ExpertRequestsList.js              | JavaScript |        -34 |         -1 |         -5 |        -40 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/client/src/pages/Homepage.js                        | JavaScript |        -36 |          0 |         -7 |        -43 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/client/src/pages/NavbarItem.js                      | JavaScript |        -33 |         -1 |         -3 |        -37 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/client/src/pages/Request.js                         | JavaScript |        -45 |         -2 |        -14 |        -61 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/client/src/pages/UploadYP.js                        | JavaScript |        -67 |          0 |        -10 |        -77 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/server/Dockerfile                                   | Docker     |          6 |          2 |          1 |          9 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/server/config/db.js                                 | JavaScript |         10 |          0 |          2 |         12 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/server/config/settings.yml                          | YAML       |          1 |          0 |          0 |          1 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/server/controllers/answer.controller.js             | JavaScript |         35 |          5 |          5 |         45 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/server/controllers/request.controller.js            | JavaScript |         95 |         12 |         11 |        118 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/server/controllers/user.controller.js               | JavaScript |         22 |          4 |          3 |         29 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/server/index.js                                     | JavaScript |         29 |         10 |         14 |         53 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/server/models/answer.model.js                       | JavaScript |         33 |          1 |          8 |         42 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/server/models/request.model.js                      | JavaScript |         88 |          4 |         18 |        110 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/server/models/user.model.js                         | JavaScript |         19 |          0 |          5 |         24 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/server/package-lock.json                            | JSON       |      7,116 |          0 |          1 |      7,117 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/server/package.json                                 | JSON       |         30 |          0 |          1 |         31 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/server/routes/answer.routes.js                      | JavaScript |          7 |          2 |          6 |         15 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/server/routes/request.routes.js                     | JavaScript |         11 |          6 |          9 |         26 |
+| /Users/julielhote/Desktop/Desktop/FHNW/IP3_4/easystepconnect/server/routes/user.routes.js                        | JavaScript |          6 |          0 |          5 |         11 |
+| Total                                                                                                            |            |    -35,417 |        -78 |       -228 |    -35,723 |
++------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
